@@ -34,6 +34,14 @@ const Navbar = () => {
                       <Link to="/contact" className='text-[20px] text-white font-medium sm:text-lg'>Contact</Link>
                       
                   </li>
+                  <li>
+                      <Link to="/signup" className='text-[20px] text-white font-medium border inline-block sm:text-lg '>Sign up</Link>
+                      
+                  </li>
+                  <li>
+                      <Link to="/signin" className='text-[20px] text-white font-medium border inline-block sm:text-lg'>sign in</Link>
+                      
+                  </li>
               </ul>
       </div>   
    </nav>

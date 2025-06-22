@@ -25,6 +25,8 @@ import EnglishPage from './Pages/EnglishPage';
 import CADPage from './Pages/CADPage';
 import RMEPage from './Pages/RMEpage';
 import ComputingPage from './Pages/ComputingPage';
+import Signin from './Pages/Signin';
+import Signup from './Pages/Signup';
 function App() {
   return (
     <>
@@ -35,6 +37,8 @@ function App() {
       <Route path='basics' element={<Basics/>}/>
       <Route path='lesson plan' element={<LessonPlan/>}/>
       <Route path='contact' element={<Contact/>}/>
+      <Route path='signup' element={<Signup/>}/>
+      <Route path='signin' element={<Signin/>}/>
       <Route path='basicSev' element={ <BasicSev />}/>
       <Route path='basic8' element={ <Basic8 />}/>
       <Route path='basic9' element={ <Basic9 />}/>
