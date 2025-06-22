@@ -35,11 +35,11 @@ const Navbar = () => {
                       
                   </li>
                   <li>
-                      <Link to="/signup" className='text-[20px] text-white font-medium border inline-block sm:text-lg '>Sign up</Link>
+                      <Link to="/signup" className='text-[20px] text-white font-medium border inline-block py-2 px-4 sm:text-lg '>Sign up</Link>
                       
                   </li>
                   <li>
-                      <Link to="/signin" className='text-[20px] text-white font-medium border inline-block sm:text-lg'>sign in</Link>
+                      <Link to="/signin" className='text-[20px] text-white font-medium border inline-block py-2 px-4 mt-4 sm:mt-0 md: mt-0 sm:text-lg'>sign in</Link>
                       
                   </li>
               </ul>
