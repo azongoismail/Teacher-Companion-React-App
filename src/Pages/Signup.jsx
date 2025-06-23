@@ -34,7 +34,7 @@ const Signup = () => {
     };
 
   return (
-    <div  className='flex min-h-[70vh] justify-center' >
+    <div  className='bg-[#B1B2B5] flex min-h-[50vh] p-8 justify-center items-center w-[50vw] m-auto shadow-lg rounded-md ' >
         <form onSubmit={handleNewUser}>
             <h1>Sign up</h1>
             <p> Already have an account? <Link to='/signin'>Sign in</Link></p>
