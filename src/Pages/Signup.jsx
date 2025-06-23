@@ -17,6 +17,12 @@ const Signup = () => {
     const handleNewUser = async (e) =>{
         e.preventDefault();
         setLoading(true);
+        if(!email) {
+            setError('enter your email')
+        }
+        if(!password) {
+            setError('enter password');
+        }
         try {
             const result = await signUpNewUser( email, password);
             if(result.success){
