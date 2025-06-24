@@ -14,6 +14,15 @@ const Signup = () => {
     const navigate = useNavigate();
     console.log(session);
 
+    const validateEmail = (email) => {
+    const regEmail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    if (!regEmail.test(email)) {
+      return setError("Invalid Email");
+    } else if (regEmail.test(email)) {
+      return true;
+    }
+  };
+
     const handleNewUser = async (e) =>{
         e.preventDefault();
         setLoading(true);
@@ -22,6 +31,12 @@ const Signup = () => {
         }
         if(!password) {
             setError('enter password');
+        }
+
+        if(!validateEmail(email)) {
+            setError('enter valide email');
+        } else {
+             alert('you have successfully sign up');
         }
         try {
             const result = await signUpNewUser( email, password);
@@ -36,6 +51,8 @@ const Signup = () => {
         } finally{
             setLoading(false);
         }
+        setEmail('');
+        setPassword('');
 
     };
 
