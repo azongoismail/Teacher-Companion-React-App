@@ -3,12 +3,15 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom'
 import Frame from '../assets/Frame.png';
 import { FaAlignJustify, FaX } from "react-icons/fa6";
+import  {UserAuth} from '../context/AuthContext'
 
 
 
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
+  const {signOut, user}= UserAuth();
+  console.log(user);
   return (
     <>
     <nav className=' bg-blue-600 flex  items-center justify-between  p-4 w-[100vw] h-[15vh] sm:flex '>
@@ -38,7 +41,9 @@ const Navbar = () => {
                       <Link to="/signup" className='text-[20px] text-white font-medium border inline-block py-2 px-4 sm:text-lg '>Sign up</Link>
                       
                   </li>
-                  
+                 {
+                    user && (<p onClick={signOut} className='bg-red-200 inline-block border-red-600 p-4 cursor-pointer'>Sign Out</p>)
+                 } 
               </ul>
       </div>   
    </nav>

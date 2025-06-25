@@ -13,7 +13,7 @@ const Signin = () => {
     console.log(session)
 
     const handleSignIn = async (e) => {
-        e.preventDefualt()
+        e.preventDefault()
         setLoading(true);
         try {
             const result = await signInUser(email, password)
@@ -37,7 +37,7 @@ const Signin = () => {
             <div className='flex flex-col max-w-full'>
                 <input onChange={(e)=>setEmail(e.target.value)} className=' bg-white py-4 px-3 mt-4 ' placeholder="email" type="email" />
                 <input onChange={(e)=> setPassword(e.target.value)} className=' bg-white py-4 px-3 mt-4 ' placeholder=" password" type="password" />
-                <button className=' bg-blue-600 py-4 px-3 mt-4 text-white' disabled={loading} type="submit"><Link to='/'>Sign in</Link></button>
+                <button className=' bg-blue-600 py-4 px-3 mt-4 text-white' disabled={loading} type="submit">Sign in</button>
                 {error && <p className=" text-red-600 p-4 text-center">{error}</p>}
             </div>
         </form>
