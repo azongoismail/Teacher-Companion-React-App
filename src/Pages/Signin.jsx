@@ -30,7 +30,7 @@ const Signin = () => {
     }
 
   return (
-    <div className='flex min-h-[70vh] justify-center'>
+    <div className='bg-[#B1B2B5] flex min-h-[50vh] p-8 justify-center items-center w-[50vw] m-auto shadow-lg rounded-md sm:min-w-[50vw] md:min-w-[20vw] lg:w-[10%] '>
         <form onSubmit={handleSignIn} >
             <h1>Sign in</h1>
             <p> Don't have an account? <Link to='/signup'>Sign up</Link></p>
