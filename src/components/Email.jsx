@@ -5,8 +5,8 @@ const Email = () => {
   return (
     <>
     <div className=''>
-        <h2 className='flex flex-row items-center gap-3 text-white text-2xl' ><span><FiMail /></span>Teacherhub@gmail.com</h2>
-        <h2 className='flex flex-row items-center gap-3 text-white text-2xl'><span><FiPhone /></span>+233268903627</h2>
+        <h2 className='flex flex-row items-center gap-3 text-white text-lg' ><span><FiMail /></span>Teacherhub@gmail.com</h2>
+        <h2 className='flex flex-row items-center gap-3 text-white text-lg'><span><FiPhone /></span>+233268903627</h2>
 
     </div>
 
