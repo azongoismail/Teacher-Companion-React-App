@@ -57,7 +57,7 @@ const Signup = () => {
     };
 
   return (
-    <div  className='bg-[#B1B2B5] flex min-h-[50vh] p-8 justify-center items-center w-[50vw] m-auto shadow-lg rounded-md ' >
+    <div  className='bg-[#B1B2B5] flex min-h-[50vh] p-8 justify-center items-center w-[50vw] m-auto shadow-lg rounded-md sm:min-w-[50vw] md:min-w-[20vw] lg:w-[10%]  ' >
         <form onSubmit={handleNewUser}>
             <h1>Sign up</h1>
             <p> Already have an account? <Link to='/signin'>Sign in</Link></p>
