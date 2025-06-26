@@ -5,9 +5,6 @@ import Frame from '../assets/Frame.png';
 import { FaAlignJustify, FaX } from "react-icons/fa6";
 import  {UserAuth} from '../context/AuthContext'
 
-
-
-
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
   const {signOut, user}= UserAuth();
