@@ -8,4 +8,14 @@ export default defineConfig({
   server:{
     port: 3000,
   },
+  theme: {
+    extend:{
+      fontFamily:{
+        sans: ['"Open Sans"', 'sans-serif'],
+        roboto:['"Roboto"', 'sans-serif'],
+
+      }
+
+    },
+  },
 })

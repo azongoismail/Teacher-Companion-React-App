@@ -19,19 +19,19 @@ const Navbar = () => {
       <div className={`${showMenu ? 'hidden' : 'block mr-10'} sm:block sm:flex sm:items-center `} >
               <ul className='sm:flex sm:flex-row sm:space-x-5'>
                   <li >
-                      <Link to="/" className='text-base text-white font-medium sm:text-base '>Home</Link>
+                      <Link to="/" className='text-base text-white font-medium sm:text-base font-sans'>Home</Link>
                     
                   </li>
                   <li>
-                      <Link to="/basics" className='text-base text-white font-medium sm:text-base'>Basics</Link>
+                      <Link to="/basics" className='text-base text-white font-medium sm:text-base font-sans'>Basics</Link>
                     
                   </li>
                   <li>
-                      <Link to="/lesson plan" className='text-base text-white font-medium sm:text-base'>Lesson Plan</Link>
+                      <Link to="/lesson plan" className='text-base text-white  sm:text-base font-sans'>Lesson Plan</Link>
                       
                   </li>
                   <li>
-                      <Link to="/contact" className='text-base text-white font-medium sm:text-base'>Contact</Link>
+                      <Link to="/contact" className='text-base text-white  sm:text-lg font-roboto'>Contact</Link>
                       
                   </li>
                   <li>
