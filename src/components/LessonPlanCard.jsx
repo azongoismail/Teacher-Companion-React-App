@@ -10,7 +10,7 @@ const LessonPlanCard = ({subject, src}) => {
    <div className='bg-orange-600 w-[100%] h-[50%] rounded-t-lg'>
 
    </div>
-    <h2 className='text-xl font-open-sans color-red-600'><Link to={src}>{subject}</Link></h2>
+    <h2 className='text-xl font-open-sans '><Link to={src}>{subject}</Link></h2>
    </div>
    </>
   )
