@@ -30,10 +30,10 @@ const Signin = () => {
     }
 
   return (
-    <div className='bg-[#B1B2B5] flex min-h-[50vh] p-8 justify-center items-center w-[50vw] m-auto shadow-lg rounded-md sm:min-w-[50vw] md:min-w-[20vw] lg:w-[10%] '>
+    <div className=' bg-gray-100 flex min-h-[50vh] p-8 justify-center items-center w-[50vw] m-auto shadow-lg rounded-md sm:min-w-[50vw] md:min-w-[20vw] lg:w-[10%] '>
         <form onSubmit={handleSignIn} >
-            <h1>Sign in</h1>
-            <p> Don't have an account? <Link to='/signup'>Sign up</Link></p>
+            <h1 className='text-2xl'>Sign in</h1>
+            <p> Don't have an account? <Link to='/signup'><span className='text-blue-600/75 underline'>Sign up</span></Link></p>
             <div className='flex flex-col max-w-full'>
                 <input onChange={(e)=>setEmail(e.target.value)} className=' bg-white py-4 px-3 mt-4 ' placeholder="email" type="email" />
                 <input onChange={(e)=> setPassword(e.target.value)} className=' bg-white py-4 px-3 mt-4 ' placeholder=" password" type="password" />

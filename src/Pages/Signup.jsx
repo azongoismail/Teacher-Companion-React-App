@@ -57,13 +57,13 @@ const Signup = () => {
     };
 
   return (
-    <div  className='bg-[#B1B2B5] flex min-h-[50vh] p-8 justify-center items-center w-[50vw] m-auto shadow-lg rounded-md sm:min-w-[50vw] md:min-w-[20vw] lg:w-[10%]  ' >
+    <div  className=' bg-gray-100 flex min-h-[50vh] p-8 justify-center items-center w-[50vw] m-auto shadow-lg rounded-md sm:min-w-[50vw] md:min-w-[20vw] lg:w-[10%]  ' >
         <form onSubmit={handleNewUser}>
-            <h1>Sign up</h1>
-            <p> Already have an account? <Link to='/signin'>Sign in</Link></p>
+            <h1 className='text-2xl'>Sign up</h1>
+            <p> Already have an account? <Link to='/signin'><span className='text-blue-600/75 underline'>Sign in</span></Link></p>
             <div className='flex flex-col max-w-full'>
                 <input onChange={(e)=>setEmail(e.target.value)} className=' bg-white py-4 px-3 mt-4 ' placeholder="email" type="email" />
-                <input onChange={(e)=> setPassword(e.target.value)} className=' bg-white py-4 px-3 mt-4 ' placeholder=" password" type="password" />
+                <input onChange={(e)=> setPassword(e.target.value)} className=' bg-[#ffffff] py-4 px-3 mt-4 ' placeholder=" password" type="password" />
                 <button className=' bg-blue-600 py-4 px-3 mt-4 text-white ' disabled={loading} type="submit">Sign up</button>
                 {error && <p className="text-red-600 p-4 text-center">{error}</p>}
             </div>
