@@ -8,13 +8,8 @@ const BasicSev = () => {
   return (
     <>
     <div className=' flex flex-1 items-center justify-center flex-col mx-auto py-4 sm:flex-row md:gap-10'>
-      <Link to='/lessonPlans'> 
-      <LessonPlanPage />
-      </Link>  
-      <Link to='/basic7AssessmentPage'>
-      <Assessment/>
-      </Link>
-      
+      <LessonPlanPage src="/lessonPlans" />
+      <Assessment src="/basic7AssessmentPage"/>
     </div>
     </>
     
