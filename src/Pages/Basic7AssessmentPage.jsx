@@ -3,7 +3,7 @@ import Paper from '../components/Paper'
 
 const Basic7AssessmentPage = () => {
   return (
-    <div className='flex flex-1 flex-wrap mx-auto lg:w-[60%]'>
+    <div className='flex flex-1 flex-wrap gap-4 h-[70%] mx-auto lg:w-[60%]'>
       <Paper />
       <Paper />
       <Paper />

@@ -3,7 +3,7 @@ import LessonPlan from '../components/LessonPlan'
 
 const BasicLessonPlanPage = () => {
   return (
-    <div className='flex flex-1 flex-wrap gap-4 mx-auto lg:w-[60%]'>
+    <div className='flex flex-1 flex-wrap gap-4 mx-auto lg:w-[40vw]'>
         <LessonPlan />
         <LessonPlan />
         <LessonPlan />
@@ -13,8 +13,6 @@ const BasicLessonPlanPage = () => {
         <LessonPlan />
         <LessonPlan />  
         <LessonPlan />
-
-      
     </div>
   )
 }
