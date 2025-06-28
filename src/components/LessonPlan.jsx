@@ -11,7 +11,6 @@ const LessonPlan = ({subject, topic}) => {
         <h1>{subject}</h1>
         <p>{topic}</p>
         <Button url={url}  fileName="B7-Lesson-Plan-Science.docx" />
-        {/* <Link to={src} download={filename} className=' flex items-center mx-auto ' target='blank'></Link> */}
     </div>
     </>
   )
