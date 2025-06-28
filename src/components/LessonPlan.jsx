@@ -9,8 +9,9 @@ const LessonPlan = ({subject, topic, src, filename}) => {
         <div className='bg-[#169BD7] w-full h-[70%] rounded-t-lg'></div>
         <h1>{subject}</h1>
         <p>{topic}</p>
-        <Link to={src} download={filename} className=' flex items-center mx-auto ' target='blank'>
         <Button />
+        <Link to={src} download={filename} className=' flex items-center mx-auto ' target='blank'>
+        
         </Link>
     </div>
     {/* <button className='flex justify-center  items-center bg-[#009A00] w-[60%] mx-auto py-2 px-2  text-center text-white text-lg cursor-pointer sm:w-[80%] md:w-[80%]'>
