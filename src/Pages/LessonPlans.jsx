@@ -20,4 +20,4 @@ const LessonPlans = () => {
   )
 }
 
-export default LessonPlans
+export default LessonPlans;
