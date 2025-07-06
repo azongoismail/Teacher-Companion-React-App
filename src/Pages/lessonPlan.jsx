@@ -12,8 +12,8 @@ const lessonPlan = () => {
         <LessonPlanCard subject={'Social Studies'} src="/SocialStudiesPage" />
         <LessonPlanCard subject={'RME'} src="/RMEpage"/>
         <LessonPlanCard subject={'CAD'} src="/CADpage" />
-        <LessonPlanCard subject={'Career tech.'} src="/CarrerTechPage" />
-        <LessonPlanCard subject={'Computing'} src="Computing" />
+        <LessonPlanCard subject={'Career tech.'} src="/CareerTechPage" />
+        <LessonPlanCard subject={'Computing'} src="/ComputingPage" />
     </div>
   );
 };
