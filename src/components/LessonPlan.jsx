@@ -10,6 +10,7 @@ const LessonPlan = ({subject, topic, url, fileName}) => {
         <div className='bg-[#169BD7] w-full h-[70%] rounded-t-lg'></div>
         <h1> Subject: {subject}</h1>
         <p>Topic: {topic}</p>
+        <p>{fileName}</p>
           <Button fileUrl={url} fileName={fileName} />
         
       
